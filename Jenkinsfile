@@ -7,6 +7,7 @@ pipeline {
         ECS_CLUSTER = "arun-dev-cluster"
         ECS_SERVICE ="arun-user-service-service"
         IMAGE_TAG = "${BUILD_NUMBER}"
+        TASK_DEF_NAME = "arun-user-service"
         AWS_ACCOUNT_ID = "526081839178"
         ECR_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}"
     }
