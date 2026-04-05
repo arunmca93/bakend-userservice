@@ -38,14 +38,14 @@ app.use(express.json());
 
 // ================= ROOT ROUTE =================
 app.get("/", (req, res) => {
-  res.send("🚀 Order Service is running successfully 456");
+  res.send("🚀 User Service is running successfully 456");
 });
 
 // ================= HEALTH CHECK =================
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "OK",
-    service: "order-service"
+    service: "user-service"
   });
 });
 
