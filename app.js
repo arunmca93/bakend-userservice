@@ -1,9 +1,8 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const db = require("./db_mysql");
+const db = require("./db");
 
-console.log("DB IMPORT VALUE:", db); // 🔎 Debug line
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -84,5 +83,5 @@ app.post("/register", async (req, res) => {
 
 // ========== START SERVER ==========
 app.listen(PORT, () => {
-  console.log(🚀 Server running on port ${PORT});
+  console.log(`🚀 Server running on port ${PORT}`);
 });
